@@ -31,13 +31,18 @@ void draw(){
   // start bottom Right
   vertex(203, 286);
   //#1
-  curveVertex(108, 63);   //Imaginary Start Handle
+  curveVertex(-136, -38);   //Imaginary Start Handle
   //#2
   curveVertex(209, 288);   //Start of Curve
   //#3
-  curveVertex(310, 253);   //End of Curve
+  curveVertex(309, 213);   //End of Curve
   //#4
-  curveVertex(200, 25);   //Imaginary End Handle  
+  int xPosition = 200;
+  int yPosition = 25;
+  fill(0);
+  ellipse(xPosition, yPosition, 5, 5);
+  noFill();
+  curveVertex(xPosition, yPosition);   //Imaginary End Handle  
   
   //End Closed Shape
   endShape();
