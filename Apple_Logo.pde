@@ -11,8 +11,8 @@ void draw(){
   //Start Closed Shape
   beginShape();
   
-  //Lower Left Part
-  curveVertex(230, -77);  // imaginary start handle
+  //Start bottom Left
+  curveVertex(227, -77);  // imaginary start handle
   curveVertex(82, 214);   // start of segment that is drawn
   curveVertex(172, 294);  // end of segment that is drawn
   curveVertex(395, 46); // imaginary end handle
@@ -20,13 +20,24 @@ void draw(){
   // start bottom middle
   vertex(172, 294);
   //#1
-  curveVertex(150, 297);   //Imaginary Start Handle
+  curveVertex(191, 295);   //Imaginary Start Handle
   //#2
-  curveVertex(172, 294);   //Start of Curve
+  curveVertex(177, 292);   //Start of Curve
   //#3
-  curveVertex(205, 286);   //End of Curve
+  curveVertex(203, 286);   //End of Curve
   //#4
-  curveVertex(300, 350);   //Imaginary End Handle
+  curveVertex(273, 344);   //Imaginary End Handle
+
+  // start bottom Right
+  vertex(203, 286);
+  //#1
+  curveVertex(108, 63);   //Imaginary Start Handle
+  //#2
+  curveVertex(209, 288);   //Start of Curve
+  //#3
+  curveVertex(310, 253);   //End of Curve
+  //#4
+  curveVertex(200, 25);   //Imaginary End Handle  
   
   //End Closed Shape
   endShape();
