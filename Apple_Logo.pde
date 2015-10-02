@@ -38,6 +38,17 @@ void draw(){
   curveVertex(303, 211);   //End of Curve
   //#4 
   curveVertex(320, -10);   //Imaginary End Handle  
+
+  // Bite In Apple
+  vertex(303, 211);
+  //#1
+  curveVertex(500, 300);   //Imaginary Start Handle
+  //#2
+  curveVertex(303, 211);   //Start of Curve
+  //#3
+  curveVertex(303, 111);   //End of Curve
+  //#4 
+  curveVertex(600, 0);   //Imaginary End Handle   
   
   //End Closed Shape
   endShape();
